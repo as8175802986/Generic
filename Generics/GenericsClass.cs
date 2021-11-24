@@ -8,15 +8,16 @@ namespace Generics
 {
     class GenericsClass
     {
-        public static int MaxNumber(int firstNum, int secondNum, int thirdNum)
+       public static string Maxstring(string firstNum, string secondNum, string thirdNum)
         {
+            //comparision of three string
             if ((firstNum.CompareTo(secondNum) > 0 && firstNum.CompareTo(thirdNum) > 0) || (firstNum.CompareTo(secondNum) >= 0 && firstNum.CompareTo(thirdNum) > 0) ||
                     (firstNum.CompareTo(secondNum) > 0 && firstNum.CompareTo(thirdNum) >= 0))
             {
                 return firstNum;
 
             }
-            else if ((secondNum.CompareTo(firstNum) > 0 && secondNum.CompareTo(thirdNum) > 0) || (secondNum.CompareTo(firstNum) >= 0 && secondNum.CompareTo(thirdNum) > 0) ||
+            else if ((secondNum.CompareTo(firstNum)>0 && secondNum.CompareTo(thirdNum)>0) || (secondNum.CompareTo(firstNum) >= 0 && secondNum.CompareTo(thirdNum) > 0) ||
                 (secondNum.CompareTo(firstNum) > 0 && secondNum.CompareTo(thirdNum) >= 0))
             {
                 return secondNum;
@@ -24,7 +25,7 @@ namespace Generics
             else
             {
                 return thirdNum;
-            }
+            }          
         }
     }
 }

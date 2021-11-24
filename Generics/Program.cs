@@ -11,7 +11,9 @@ namespace Generics
         static void Main(string[] args)
         {
             //calling the generic class method
+
             Console.WriteLine(GenericClass.Maxstring("apple","mango","banana"));
+
         }
     }
 }

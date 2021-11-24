@@ -10,7 +10,8 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(GenericsClass.MaxNumber(100, 30, 30));
+            //calling the generic class method
+            Console.WriteLine(GenericClass.Maxstring("apple","mango","banana"));
         }
     }
 }

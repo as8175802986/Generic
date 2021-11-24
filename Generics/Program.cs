@@ -10,6 +10,7 @@ namespace Generics
     {
         static void Main(string[] args)
         {
+
                   //calling the generic class method by creating different objects
             //we need to create diff objects so that we can use other data types 
 
@@ -20,6 +21,7 @@ namespace Generics
             Console.WriteLine(myObj.MaxValue());
             Console.WriteLine(myObj1.MaxValue());
             Console.WriteLine(myObj2.MaxValue());
+
         }
     }
 }

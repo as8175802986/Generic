@@ -6,12 +6,26 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    class GenericsClass
+    
+       class GenericsClass<T> where T: IComparable                   //Tcomparable is used to identifu the compare to class method
     {
+
+        private T firstNum, secondNum, thirdNum;                //declaring instance variables
+
+        public GenericClass(T firstNum, T secondNum, T thirdNum)       //declaring the class consstructor
+        {
+            this.firstNum = firstNum;
+            this.secondNum = secondNum;
+            this.thirdNum = thirdNum;
+        }
+        public static T MaxOf(T firstNum, T secondNum,T thirdNum)              //declaring the max of method. statci so that we can use it without creating an objecct in this class
+        {
+            //comparision of three values
 
        public static string Maxstring(string firstNum, string secondNum, string thirdNum)
         {
             //comparision of three string
+
 
 
             if ((firstNum.CompareTo(secondNum) > 0 && firstNum.CompareTo(thirdNum) > 0) || (firstNum.CompareTo(secondNum) >= 0 && firstNum.CompareTo(thirdNum) > 0) ||
@@ -29,6 +43,15 @@ namespace Generics
             {
                 return thirdNum;
             }          
+
+        }
+
+        public T MaxValue()                        //another method that applies the constructor and thenpronts or returns the value
+        {
+            T max = GenericClass<T>.MaxOf(this.firstNum, this.secondNum, this.thirdNum);
+            return max;
+
         }
     }
+    
 }

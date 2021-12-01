@@ -22,12 +22,6 @@ namespace Generics
         {
             //comparision of three values
 
-       public static string Maxstring(string firstNum, string secondNum, string thirdNum)
-        {
-            //comparision of three string
-
-
-
             if ((firstNum.CompareTo(secondNum) > 0 && firstNum.CompareTo(thirdNum) > 0) || (firstNum.CompareTo(secondNum) >= 0 && firstNum.CompareTo(thirdNum) > 0) ||
                     (firstNum.CompareTo(secondNum) > 0 && firstNum.CompareTo(thirdNum) >= 0))
             {
